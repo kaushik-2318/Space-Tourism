@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom"
+
 function Home() {
     return (
         <>
-            <div className={`bg-[url('../../src/assets/home/background-home-mobile.jpg')] md:bg-[url('../../src/assets/home/background-home-tablet.jpg')] lg:bg-[url('../../src/assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover bg-center h-screen md:h-full  lg:h-screen w-full`}>
+            <div className='home h-screen md:h-full lg:h-screen w-full bg-no-repeat bg-cover bg-center'>
                 <div className='flex justify-center lg:justify-around items-center font-Barlow text-lavenderBlue pt-36 lg:pt-52 flex-col lg:flex-row gap-10'>
                     <div className=" flex justify-center items-center lg:items-start flex-col gap-5 md:gap-3 lg:gap-32">
                         <p className='uppercase text-[16px] md:text-[20px] lg:text-[28px] tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px]'>
@@ -16,14 +18,14 @@ function Home() {
                             because we’ll give you a truly out of this world experience!
                         </p>
                     </div>
-                    <a href='/destination'>
+                    <NavLink to='/destination'>
                         <div className='flex justify-center items-center group/expand h-[150px] md:h-[242px] lg:h-[274px] w-[150px] md:w-[242px] lg:w-[274px] relative'>
                             <button className='lg:absolute top-5 uppercase z-[2] text-richBlack bg-white h-[150px] md:h-[242px] lg:h-[274px] w-[150px] md:w-[242px] lg:w-[274px] rounded-full font-Bellefair text-[20px] md:text-[32px] tracking-[1.25px] md:tracking-[2px]'>
                                 Explore
                             </button>
                             <div className='hidden lg:block absolute z-[1] bg-[#ffffff1c] w-[0px] h-[0px] rounded-full mt-8 group-hover/expand:w-[450px] group-hover/expand:h-[450px] duration-200'></div>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
             </div >
         </>

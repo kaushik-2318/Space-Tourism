@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
 import data from '../data.json'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react';
 
 function Destination() {
+
     const [destination, setDestination] = useState(0);
     const [activeDestination, setActiveDestination] = useState("moon");
-
     const handleCick = (e) => {
         const title = e.target.textContent.toLowerCase();
         const index = data.destinations.findIndex((item) => item.name.toLowerCase() === title);
@@ -16,11 +14,10 @@ function Destination() {
 
     return (
         <>
-            <div className={`bg-[url('../../src/assets/destination/background-destination-mobile.jpg')] md:bg-[url('../../src/assets/destination/background-destination-tablet.jpg')] lg:bg-[url('../../src/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover bg-center h-full w-full flex justify-center items-center md:items-start flex-col lg:block`}>
+            <div className={`destination bg-no-repeat bg-cover bg-center h-full w-full flex justify-center items-center md:items-start flex-col lg:block`}>
                 <p className='uppercase text-[16px] md:text-[20px] lg:text-[28px] tracking-[2.7px] md:tracking-[3.38px] lg:tracking-[4.72px] font-Barlow text-white pt-28 lg:pt-52 md:pl-20 lg:pl-40 pb-10'>
                     <span className="font-bold text-[rgba(255,255,255,.25)]">01</span> Pick  Your Destination
                 </p>
-
                 <div className='flex justify-center lg:justify-around items-center font-Barlow text-lavenderBlue flex-col lg:flex-row w-full gap-10'>
                     <div className='w-[170px] h-[170px] md:w-[300px] md:h-[300px] lg:w-[445px] lg:h-[445px]'>
                         <img className='image' src={data.destinations[destination].webp} alt="Moon" />

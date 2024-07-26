@@ -1,3 +1,55 @@
 .active {
     border-bottom: 4px solid #ffffff1e;
 }
+
+.home {
+    background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027822/background-home-mobile_idpfcb.jpg");
+}
+
+.destination {
+    background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027719/background-destination-mobile_mp6ybe.jpg");
+}
+
+.crew {
+    background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027498/background-crew-mobile_b3keme.jpg");
+}
+
+.technology {
+    background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027882/background-technology-mobile_ruwsrh.jpg");
+}
+
+@media (min-width: 768px) {
+    .home {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027822/background-home-tablet_lwnoey.jpg");
+    }
+
+    .destination {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027719/background-destination-tablet_umlfek.jpg");
+    }
+
+    .crew {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027499/background-crew-tablet_vcsw8y.jpg");
+    }
+
+    .technology {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027883/background-technology-tablet_qhy3bl.jpg");
+    }
+}
+
+@media (min-width: 1024px) {
+    .home {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027822/background-home-desktop_g6tovq.jpg");
+    }
+
+    .destination {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027719/background-destination-desktop_ep6mlt.jpg");
+    }
+
+    .crew {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027499/background-crew-desktop_pumha5.jpg");
+    }
+
+    .technology {
+        background: url("https://res.cloudinary.com/dococv5lg/image/upload/v1722027881/background-technology-desktop_sdrpas.jpg");
+    }
+}
